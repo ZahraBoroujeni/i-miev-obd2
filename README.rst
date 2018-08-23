@@ -75,7 +75,7 @@ to be following:
 .. _231:
 
 231 - Brake pedal switch sensor
--------------------------------
+-----------------
 
 - D0-D3: ``0x00`` (const?)
 - D4: ``0x02`` if brake is free, ``0x00`` if brake pedal is pressed
@@ -84,7 +84,7 @@ to be following:
 .. _236:
 
 236 - Steering wheel sensor
----------------------------
+-----------------
 
 Steering wheel sensor data is transmitted every 10ms. Data bits:
 
@@ -98,7 +98,7 @@ Steering wheel sensor data is transmitted every 10ms. Data bits:
 .. _412:
 
 412 - Speed + Odometer value
-----------------------------
+-----------------
 
 Transmitted every 100ms. Data bits:
 
@@ -108,3 +108,65 @@ Transmitted every 100ms. Data bits:
 - D5: ``0x00`` (const?)
 - D6: ``0x21`` (const?)
 - D7: ``0x06`` (const?)
+
+.. _373:
+
+373 - Battery
+-----------------
+
+Transmitted every 10ms. Data bits:
+
+- D0: ``0x00`` (const?)
+- D1: ``0x00`` (const?)
+- D2-D3: Battery pack amps (A)
+- D4-D5: Battery pack amps (A)
+- D6: ``0x00`` (const?)
+- D7: ``0x00`` (const?)
+
+.. _374:
+
+374 - Battery 
+----------------------------
+
+Transmitted every 100ms. Data bits:
+
+- D0: ``0x00`` (const?)
+- D1: state of charge : ([byte 1] - 10) / 2 , (209 == 99.5%, 38 == 14%)
+
+.. _6E:
+
+6E1/6E2/6E3/6E4 -  Battery 
+-----------------
+
+Transmitted every 40ms. Data bits:
+
+- D0: counter
+- D1: 0x00 (const?)
+- D2: almost 0x4E (temperature?)
+- D3: almost 0x4E (temperature?)
+- D4:  0x01 (const?)
+- D5: Amper
+- D6: 0x01 (const?)
+- D7: Amper
+
+.. _424:
+
+ 424 -  Light
+-----------------
+
+|Bits|D0| D1 | D2 |D6 |
+| ----- | -------- | ------- | ---- |  ---- | 
+|0: | |hazard lights |Unlock doors | |
+| 1: | |Right Blinker |Unlock driver door | |
+| 2: |Automatic light |Upper Beam | |
+| 3: |Fog lights |Wiper rear | |Rear window heating |
+| 4: |Rear fog light |Night headlights|  |
+| 5: | |Sidelights| |
+| 6: | | |
+| 7: | | |
+
+- D3: 
+- D4:  
+- D5: 
+- D6:
+- D7:
