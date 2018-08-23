@@ -52,7 +52,8 @@ to be following:
 
 - D0: ``0x00`` (const?)
 - D1: ``0x20`` (const?)
-- D2-D3: pedal position, ``60:00`` is zero position, max seems to be around ``61:bf``
+- D2: ``0x60`` (const?)
+- D2-D3: pedal position  ``0x02`` is zero position
 - D4-D5: speed, ``0xc000`` is zero speed
 - D6-D7: speed, ``0xc000`` is zero speed
 
