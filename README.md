@@ -17,17 +17,17 @@ Conventions used in this document:
 - Data bytes are zero-indexed: D0, D1, etc
 
 OBD-II Traffic analysis
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------
 
 Periodically occurring PIDs:
 
 - 1000ms (1 fps):
-  01C [#note_testmode]_
+  01C [#e]_
 - 200ms (5 fps):
-  568 [#note_testmode]_
+  568 [#]_
 - 100ms (10 fps):
-  101, 286, 298, 29A, 2F2, 374, 375, 384, 385, 389 [#note_testmode]_,
-  38A [#note_testmode]_, 3A4, 408, 412_, 695, 696, 697, 6FA, 75A, 75B
+  101, 286, 298, 29A, 2F2, 374, 375, 384, 385, 389 [#]_,
+  38A [#]_, 3A4, 408, 412_, 695, 696, 697, 6FA, 75A, 75B
 - 50ms (20 fps):
   38D, 564, 565, 5A1, 6D0, 6D1, 6D2, 6D3, 6D4, 6D5, 6D6, 6DA
 - 40ms (25 fps):
@@ -37,10 +37,11 @@ Periodically occurring PIDs:
 - 10ms (100fps):
   236_, 285, 288, 373
 
-.. [#note_testmode] Possibly only sent in debug mode.
+.. [#] Possibly only sent in debug mode.
 
 PID descriptions
-~~~~~~~~~~~~~~~~
+-----------------
+-----------------
 
 .. _208:
 
