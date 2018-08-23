@@ -1,4 +1,4 @@
-::
+
 
            ___  __        __     __                          ___
     |\/| |  |  /__` |  | |__) | /__` |__| |    | __  |\/| | |__  \  /
@@ -43,7 +43,6 @@ PID descriptions
 -----------------
 -----------------
 
-.. _208:
 
 208 - Brake pedal
 -----------------
@@ -58,7 +57,6 @@ to be following:
 - D4-D5: speed, ``0xc000`` is zero speed
 - D6-D7: speed, ``0xc000`` is zero speed
 
-.. _210:
 
 210 - Gas pedal
 -----------------
@@ -73,8 +71,6 @@ to be following:
 - D5-D6:  ``0x00`` (const?)
 
 
-.. _231:
-
 231 - Brake pedal switch sensor
 -----------------
 
@@ -82,7 +78,6 @@ to be following:
 - D4: ``0x02`` if brake is free, ``0x00`` if brake pedal is pressed
 - D5-D7: ``0x00`` (const?)
 
-.. _236:
 
 236 - Steering wheel sensor
 -----------------
@@ -96,8 +91,6 @@ Steering wheel sensor data is transmitted every 10ms. Data bits:
 - D6: ``0x00`` (const?)
 - D7: TODO
 
-.. _412:
-
 412 - Speed + Odometer value
 -----------------
 
@@ -110,7 +103,6 @@ Transmitted every 100ms. Data bits:
 - D6: ``0x21`` (const?)
 - D7: ``0x06`` (const?)
 
-.. _373:
 
 373 - Battery
 -----------------
@@ -124,7 +116,6 @@ Transmitted every 10ms. Data bits:
 - D6: ``0x00`` (const?)
 - D7: ``0x00`` (const?)
 
-.. _374:
 
 374 - Battery 
 ----------------------------
@@ -134,7 +125,6 @@ Transmitted every 100ms. Data bits:
 - D0: ``0x00`` (const?)
 - D1: state of charge : ([byte 1] - 10) / 2 , (209 == 99.5%, 38 == 14%)
 
-.. _6E:
 
 6E1/6E2/6E3/6E4 -  Battery 
 -----------------
@@ -150,12 +140,10 @@ Transmitted every 40ms. Data bits:
 - D6: 0x01 (const?)
 - D7: Amper
 
-.. _424:
 
 424 -  Light
 -----------------
-
-.. 
+ 
 
 | Bits  |       D0        |       D1         |        D2          |         D6          |
 | ----- | --------------  | ---------------- | ----------------   |  ----------------   | 
