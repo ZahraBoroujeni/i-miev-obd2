@@ -53,10 +53,23 @@ to be following:
 - D0: ``0x00`` (const?)
 - D1: ``0x20`` (const?)
 - D2-D3: pedal position, ``60:00`` is zero position, max seems to be around ``61:bf``
-- D4: ``0xc0`` (const?)
-- D5: ``0x00`` (const?)
-- D6: ``0xc0`` (const?)
-- D7: ``0x00`` (const?)
+- D4-D5: speed, ``0xc000`` is zero speed
+- D6-D7: speed, ``0xc000`` is zero speed
+
+.. _210:
+
+210 - Gas pedal
+-----------------
+
+Gas pedal sensor data is transmitted every 20ms. Data bits seem
+to be following:
+
+- D0: ``0x00`` (const?)
+- D1: gas pedal position,  (const?)
+- D2-D3: pedal position, ``60:00`` is zero position, max seems to be around ``61:bf``
+- D4-D5: speed, ``0xc000`` is zero speed
+- D6-D7: speed, ``0xc000`` is zero speed
+
 
 .. _231:
 
@@ -64,7 +77,7 @@ to be following:
 -------------------------------
 
 - D0-D3: ``0x00`` (const?)
-- D4: ``0x00`` if brake is free, ``0x02`` if brake pedal is pressed
+- D4: ``0x02`` if brake is free, ``0x00`` if brake pedal is pressed
 - D5-D7: ``0x00`` (const?)
 
 .. _236:
