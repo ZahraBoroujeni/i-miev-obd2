@@ -154,16 +154,16 @@ Transmitted every 40ms. Data bits:
 424 -  Light
 -----------------
 
-|Bits|D0| D1 | D2 |D6 |
-| ----- | -------- | ------- | ---- |  ---- | 
-|0: | |hazard lights |Unlock doors | |
-| 1: | |Right Blinker |Unlock driver door | |
-| 2: |Automatic light |Upper Beam | | |
-| 3: |Fog lights |Wiper rear | |Rear window heating |
-| 4: |Rear fog light |Night headlights|  | |
-| 5: | |Sidelights| | |
-| 6: | | | | |
-| 7: | | | | |
+           | Bits  |       D0        |       D1         |        D2          |         D6          |
+           | ----- | --------------  | ---------------- | ----------------   |  ----------------   | 
+           | 0:    |                 | hazard lights    | Unlock doors       |                     |
+           | 1:    |                 | Right Blinker    | Unlock driver door |                     |
+           | 2:    | Automatic light | Upper Beam       |                    |                     |
+           | 3:    | Fog lights      | Wiper rear       |                    | Rear window heating |
+           | 4:    | Rear fog light  | Night headlights |                    |                     |
+           | 5:    |                 | Sidelights       |                    |                     |
+           | 6:    |                 |                  |                    |                     |
+           | 7:    |                 |                  |                    |                     |
 
 - D3: 
 - D4:  
