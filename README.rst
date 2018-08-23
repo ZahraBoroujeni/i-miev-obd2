@@ -64,11 +64,11 @@ to be following:
 Gas pedal sensor data is transmitted every 20ms. Data bits seem
 to be following:
 
-- D0: ``0x00`` (const?)
-- D1: gas pedal position,  (const?)
-- D2-D3: pedal position, ``60:00`` is zero position, max seems to be around ``61:bf``
-- D4-D5: speed, ``0xc000`` is zero speed
-- D6-D7: speed, ``0xc000`` is zero speed
+- D0-D1: ``0x0000`` (const?)
+- D2: gas pedal position,  (const?)
+- D3: just first bit changes
+- D4: 0x80 or 0x00 
+- D5-D6:  ``0x00`` (const?)
 
 
 .. _231:
