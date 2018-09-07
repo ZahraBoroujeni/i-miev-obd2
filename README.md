@@ -111,8 +111,8 @@ Transmitted every 10ms. Data bits:
 
 - D0: ``0x00`` (const?)
 - D1: ``0x00`` (const?)
-- D2-D3: Battery pack amps (A)
-- D4-D5: Battery pack amps (A)
+- D2-D3: Battery pack amps (A) ((D2-128)*256+D3)/100
+- D4-D5: Battery pack voltage (V) (D4*256+D5)/10
 - D6: ``0x00`` (const?)
 - D7: ``0x00`` (const?)
 
